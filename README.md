@@ -13,6 +13,19 @@ An interactive, drag-and-drop pipeline editor built with React + ReactFlow and b
 
 📦 Deployed Full Stack (Frontend on Vercel, Backend on Render)
 
+
+🧪 Testing It
+Drag Input → Text → Output
+
+In Text node, write: Hello, {{input_1}}!
+
+Click Submit Graph
+
+Backend returns: ✅ Valid DAG
+
+
+
+
 🧠 Architecture Overview:
 React handles the canvas & node UI (via ReactFlow)
 
@@ -35,3 +48,9 @@ cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 Access docs: http://localhost:8000/docs
+
+👏 Acknowledgements
+Built as part of the VectorShift Frontend Assessment Challenge.
+Special thanks to the VectorShift team for this unique full-stack exercise!
+
+
