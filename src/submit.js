@@ -13,7 +13,7 @@ export const SubmitButton = () => {
     const payload = { nodes, edges };
 
     try {
-      const response = await fetch('http://localhost:8000/validate', {
+      const response = await fetch('https://vectorshift-backend-mqzo.onrender.com/validate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
