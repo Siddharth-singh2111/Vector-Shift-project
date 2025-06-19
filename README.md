@@ -14,6 +14,25 @@ An interactive, drag-and-drop pipeline editor built with React + ReactFlow and b
 📦 Deployed Full Stack (Frontend on Vercel, Backend on Render)
 
 
+frontend/
+├── src/
+│   ├── nodes/
+│   │   ├── inputNode.js       → Input node with name & type
+│   │   ├── outputNode.js      → Output node for displaying results
+│   │   ├── llmNode.js         → Fixed structure LLM node
+│   │   ├── textNode.js        → Dynamic text node using {{variables}}
+│   │   ├── mathNode.js        → Node for math-based logic
+│   │   ├── imageNode.js       → Image node with input port
+│   │   └── audioNode.js       → Audio node (like image but for audio files)
+│   ├── toolbar.js             → Draggable UI components (nodes)
+│   ├── ui.js                  → ReactFlow canvas with all logic
+│   ├── submit.js              → Connects to backend `/validate` API
+│   └── App.js                 → Main entry, renders toolbar + canvas
+├── public/                    → HTML template & favicon
+├── package.json               → Project config & dependencies
+
+
+
 🧪 Testing It
 Drag Input → Text → Output
 
